@@ -1,11 +1,11 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
   // Part 1: Ensure that the user can play the game.
   var cards = document.querySelectorAll('.card');
   var selectedCards = [];
   var matchedCards = [];
 
-  cards.forEach(function(card) {
-    card.addEventListener('click', function() {
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
       // If the card has already been matched, ignore it.
       if (card.classList.contains('is-matched')) {
         return;
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
       // If we have selected two cards, see if they match.
       if (selectedCards.length === 2) {
         var card1 = selectedCards[0];
-        var card2 = selectedCards[0];
+        var card2 = selectedCards[1];
 
         // If the cards match, add them to the collection of matched cards and
         // apply the correct CSS class.
