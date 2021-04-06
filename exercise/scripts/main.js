@@ -36,6 +36,10 @@ window.addEventListener('DOMContentLoaded', function () {
         card2.classList.remove('is-selected');
         selectedCards = [];
       }
+      // Save the selected card
+      else {
+        selectedCards[selectedCards.length] = card;
+      }
 
       // If we've matched all the cards, display a message.
       if (matchedCards.length > cards.length) {
