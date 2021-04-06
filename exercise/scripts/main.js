@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function () {
   var deckColor = window.location.hash;
 
   if (deckElement && deckColor) {
-    var className = 'cards--' + deckColor;
+    var className = 'cards--' + deckColor.replace('#', '');
     deckElement.classList.add(className);
   }
 });
